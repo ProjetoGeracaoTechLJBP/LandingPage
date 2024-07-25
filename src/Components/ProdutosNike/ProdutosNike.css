@@ -22,7 +22,6 @@
 }
 
 #Sect-main {
-    /* height: 38rem; */
     display: flex;
     align-items: start;
 }
@@ -30,7 +29,6 @@
 
 #Sect-TenisAndInformation {
     display: flex;
-    /* border: 2px solid black; */
     align-items: center;
     width: 90%;
     height: 30rem;
@@ -86,7 +84,6 @@
 #carouselExampleDark {
     display: flex;
     flex-direction: column;
-    /* border: 3px solid red; */
     margin-bottom: 22px;
     width: 35rem;
     height: 28rem;
@@ -131,7 +128,6 @@
 
 #Part-Price {
     display: flex;
-    /* border: 1px solid green; */
     height: 2rem;
     margin-bottom: 20px;
 }
@@ -146,7 +142,6 @@
 }
 
 #Mine-Value p {
-    /* border: 2px solid red; */
     margin-left: 5px;
     height: 30px;
     display: flex;
@@ -218,6 +213,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+
 }
 
 #btn-Color > #btn-blue {
@@ -225,22 +221,23 @@
     border: none;
 }
 
-#btn-Color > #btn-pink {
+#btn-Color > #btn-red {
     background-color: #FF6969;
-    border: none;
+    border: 0px solid #FF6969;
 }
+
+
 #btn-Color > #btn-gray {
     background-color: #5E5E5E;
     border: none;
 }
+
 #btn-Color > #btn-purple {
     background-color: #6D70B7;
-    border: none;
+    border-width: 0;
 }
 
-#btn-blue:hover {
-    border: 1px solid red;
-}
+
 
 #btn-Compra {
     margin-top: 8px;

@@ -7,6 +7,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { useState } from 'react'
 
 
+
 function DarkVariantExample() {
 
   const [click, setClick] = useState(null)
@@ -19,8 +20,21 @@ function DarkVariantExample() {
     }
   }
 
+  /* Duas maneiras de color cores no background numa tag específica */
+  // Mudança de cor 01:
   const [backgroundColor, setBackgroundColor] = useState("")
+  let colors = ['#6FEEFF', '#FF6969', '#5E5E5E', '#6D70B7']
 
+  function mudarCor(color) {
+    for (let i = 0; i < colors.length; i++) {
+      // alert(colors[i-1])
+      if (color === colors[i]) {
+        setBackgroundColor(color)
+        break
+      }
+    }
+  }
+  // Mudança de cor 02:
   const cor1 = () => {
     setBackgroundColor('#E2E3FF')
   }
@@ -40,6 +54,8 @@ function DarkVariantExample() {
   const cor5 = () => {
     setBackgroundColor('#E8DFCF')
   }
+
+
 
   return (
     <>
@@ -105,7 +121,6 @@ function DarkVariantExample() {
                 <p>Casual | Nike | REF:38416711</p>
               </div>
 
-              {/* Estrelas funcionais */}
               <div id='star-Container'>
                 <AvaliStar />
                 <button id='btn-star'>4.7 <span id='emoji-star'>★</span></button>
@@ -136,10 +151,10 @@ function DarkVariantExample() {
               </div>
               <p id='Text-Color'>Cores</p>
               <div id='btn-Color'>
-                <button id='btn-blue'></button>
-                <button id='btn-pink'></button>
-                <button id='btn-gray'></button>
-                <button id='btn-purple'></button>
+                <button id='btn-blue' onClick={() => mudarCor('#6FEEFF')}></button>
+                <button id='btn-red' onClick={() => mudarCor('#FF6969')}></button>
+                <button id='btn-gray' onClick={() => mudarCor('#5E5E5E')}></button>
+                <button id='btn-purple' onClick={() => mudarCor('#6D70B7')}></button>
               </div>
               <button id='btn-Compra'>COMPRAR</button>
             </div>
